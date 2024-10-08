@@ -4,9 +4,9 @@ import zipfile
 
 from lxml import etree
 
-from LibbyDL.DeDRM.ineptepub import decryptBook
-from LibbyDL.DeDRM.libadobe import sendHTTPRequest_DL2FILE
-from LibbyDL.DeDRM.libadobeFulfill import buildRights, fulfill
+from libbydl.DeDRM.ineptepub import decryptBook
+from libbydl.DeDRM.libadobe import sendHTTPRequest_DL2FILE
+from libbydl.DeDRM.libadobeFulfill import buildRights, fulfill
 from loguru import logger
 import re
 

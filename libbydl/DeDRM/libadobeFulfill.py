@@ -2,11 +2,11 @@ import base64
 
 from lxml import etree
 
-from LibbyDL.DeDRM.libadobe import VAR_VER_BUILD_IDS, VAR_VER_USE_DIFFERENT_NOTIFICATION_XML_ORDER
-from LibbyDL.DeDRM.libadobe import VAR_VER_SUPP_VERSIONS, VAR_VER_HOBBES_VERSIONS
-from LibbyDL.DeDRM.libadobe import addNonce, sign_node, get_cert_from_pkcs12, sendRequestDocu, sendRequestDocuRC, \
+from libbydl.DeDRM.libadobe import VAR_VER_BUILD_IDS, VAR_VER_USE_DIFFERENT_NOTIFICATION_XML_ORDER
+from libbydl.DeDRM.libadobe import VAR_VER_SUPP_VERSIONS, VAR_VER_HOBBES_VERSIONS
+from libbydl.DeDRM.libadobe import addNonce, sign_node, get_cert_from_pkcs12, sendRequestDocu, sendRequestDocuRC, \
     sendHTTPRequest
-from LibbyDL.DeDRM.libadobe import get_devkey_path, get_device_path, get_activation_xml_path
+from libbydl.DeDRM.libadobe import get_devkey_path, get_device_path, get_activation_xml_path
 from loguru import logger
 
 # @@CALIBRE_COMPAT_CODE@@
@@ -141,7 +141,7 @@ def getDecryptedCert(pkcs12_b64_string=None):
     pkcs12_data = base64.b64decode(pkcs12_b64_string)
 
     try:
-        from LibbyDL.DeDRM.libadobe import devkey_bytes as devkey_adobe
+        from libbydl.DeDRM.libadobe import devkey_bytes as devkey_adobe
     except:
         pass
 

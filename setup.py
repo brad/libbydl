@@ -20,7 +20,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "libbydl=LibbyDL.__main__:main",
+            "libbydl=libbydl.__main__:main",
         ],
     },
 )
