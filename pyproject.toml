@@ -17,7 +17,7 @@ pycryptodome = "^3.10.1"
 oscrypto = "^1.2.0"
 
 [tool.poetry.scripts]
-libbydl = "LibbyDL:main"
+libbydl = "LibbyDL.__main__:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
