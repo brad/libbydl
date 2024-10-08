@@ -1,4 +1,4 @@
-from LibbyDL.libbydl import cli
+from libbydl.libbydl import cli
 
 def main():
     cli()

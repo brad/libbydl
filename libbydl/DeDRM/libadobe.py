@@ -37,7 +37,7 @@ except ImportError:
 # @@CALIBRE_COMPAT_CODE@@
 
 
-from LibbyDL.DeDRM.customRSA import CustomRSA
+from libbydl.DeDRM.customRSA import CustomRSA
 
 from oscrypto import keys
 from oscrypto.asymmetric import dump_certificate, dump_private_key

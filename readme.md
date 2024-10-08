@@ -11,8 +11,8 @@ DRM removal logic from: https://github.com/noDRM/DeDRM_tools
 1. you will need a library card with access to OverDrive
 2. open Libby either on your phone or on https://libbyapp.com 
 3. login with your card into it as you would normally
-4. go to settings > copy to another device then run "python -m LibbyDL clone {the code you got in libby}"
-5. run "python -m LibbyDL provision-ade-account" so you can actually decrypt the ebooks
+4. go to settings > copy to another device then run "python -m libbydl clone {the code you got in libby}"
+5. run "python -m libbydl provision-ade-account" so you can actually decrypt the ebooks
 6. have fun!
 ```
 

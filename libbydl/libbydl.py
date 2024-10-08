@@ -9,7 +9,7 @@ from colorama import Fore, init
 from loguru import logger
 from tabulate import tabulate
 
-from LibbyDL.DeDRM.dedrm_acsm import dedrm
+from libbydl.DeDRM.dedrm_acsm import dedrm
 
 ENDPOINT = "https://sentry.libbyapp.com"
 THUNDER_ENDPOINT = "https://thunder.api.overdrive.com"
@@ -226,10 +226,10 @@ def cli(ctx, token, debug, quiet):
 
 @cli.command()
 def provision_ade_account():
-    from LibbyDL.DeDRM.libadobeAccount import createDeviceFile, createUser, signIn, activateDevice, \
+    from libbydl.DeDRM.libadobeAccount import createDeviceFile, createUser, signIn, activateDevice, \
         exportAccountEncryptionKeyDER
-    from LibbyDL.DeDRM.libadobe import createDeviceKeyFile, KEY_FOLDER
-    from LibbyDL.DeDRM.dedrm_acsm import DECRYPTION_KEY
+    from libbydl.DeDRM.libadobe import createDeviceKeyFile, KEY_FOLDER
+    from libbydl.DeDRM.dedrm_acsm import DECRYPTION_KEY
     import os
     ADE_VERSION = 1
     os.makedirs(KEY_FOLDER, exist_ok=True)
