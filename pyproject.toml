@@ -2,7 +2,7 @@
 name = "libbydl"
 version = "0.1.0"
 description = "A tool for downloading and decrypting books from Libby"
-authors = ["Marek Veselý <me@notmarek.com"]
+authors = ["Marek Veselý <me@notmarek.com>"]
 license = "GPLv3"
 
 [tool.poetry.dependencies]
