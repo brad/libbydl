@@ -14,7 +14,7 @@ loguru = "^0.5.3"
 tabulate = "^0.8.9"
 lxml = "^5.3.1"
 pycryptodome = "^3.10.1"
-oscrypto = "^1.2.0"
+oscrypto = {url = "https://github.com/wbond/oscrypto/archive/d5f3437ed24257895ae1edd9e503cfb352e635a8.zip"}
 
 [tool.poetry.scripts]
 libbydl = "libbydl.__main__:main"
